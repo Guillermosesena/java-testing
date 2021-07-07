@@ -26,6 +26,11 @@ public class MovieRepositoryJdbc implements MovieRepository {
         return jdbcTemplate.query("select * from movies", movieMapper);
     }
 
+    public Collection<Movie> findByname(String name) {
+        Object[] args = { name };
+        return jdbcTemplate.query("select * from movies where name = ?", args,movieMapper);
+    }
+
     @Override
     public void saveOrUpdate(Movie movie) {
         jdbcTemplate.update("insert into movies (name, minutes,genre) values (?, ?, ?)",

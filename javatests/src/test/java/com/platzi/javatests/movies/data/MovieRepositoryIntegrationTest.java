@@ -70,6 +70,20 @@ public class MovieRepositoryIntegrationTest {
     }
 
 
+    @Test
+    public void load_by_name() throws SQLException {
+        //db in memory
+
+        Collection<Movie> movies = movieRepository.findByname("Dark Knight");
+
+        assertThat(movies, is(Arrays.asList(
+                new Movie(1, "Dark Knight", 152, Genre.ACTION)
+        )));
+
+    }
+
+
+
     @After
     public void tearDown() throws Exception{
         final Statement s = dataSource.getConnection().createStatement();
