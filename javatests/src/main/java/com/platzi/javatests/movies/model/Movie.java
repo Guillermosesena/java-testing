@@ -18,6 +18,7 @@ public class Movie {
         this.name = name;
         this.minutes = minutes;
         this.genre = genre;
+        this.genre = genre;
     }
 
     public Integer getId() {
