@@ -53,7 +53,7 @@ The above steps are repeated until complete the application requirements.
 
 
 ## This&nbsp;repository
-This repository contains the project that was developed throughout the Basic Course of Testing in Java, in which you learned to write code to verify the operation of applications, in addition you learned to use the jnuit library for unitary tests and mockito to simulate classes .
+This repository contains the project that was developed throughout the Basic Course of Testing in Java, in which I learned to write code to verify the operation of applications, in addition you learned to use the jnuit library for unitary tests and mockito to simulate classes .
 
 This project consists of different exercises such as:
 - A password verifier (unit testing)
